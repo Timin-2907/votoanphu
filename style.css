@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,11 +10,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ body{
     color: white;
 }
 
-header{
+header {
     margin-top: 20px;
     position: fixed;
     top: 0;
@@ -30,14 +30,14 @@ header{
     width: 100%;
     padding: 1rem 9%;
     background-color: transparent;
-    filter: drop-shadow(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: #b74b4b;
     font-weight: 800;
@@ -45,11 +45,11 @@ header{
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-nav a{
+nav a {
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
@@ -59,50 +59,17 @@ nav a{
 }
 
 nav a:hover,
-nav a.active{
+nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #b74b4b;
-    }
-}
-
-section{
+section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,31 +77,31 @@ section{
     background-color: black;
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-span{
+span {
     color: #b74b4b;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
 }
 
-.home-img{
+.home-img {
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
     width: 32vw;
     border-radius: 50%;
@@ -143,12 +110,11 @@ span{
     transition: 0.2s linear;
 }
 
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+.home-img img:hover {
+    transform: scale(1.05);
 }
 
-.social-icons a{
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -163,14 +129,14 @@ span{
     color: #b74b4b;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: black;
     transform: scale(1.3) translateY(-5px);
     background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: black;
@@ -184,8 +150,8 @@ span{
     cursor: pointer;
 }
 
-.btn:hover{
-    transform: scale3d(1.03);
+.btn:hover {
+    transform: scale(1.03);
     background-color: #b74b4b;
     color: black;
     box-shadow: 0 0 25px #b74b4b;
@@ -207,7 +173,7 @@ span{
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
+.typing-text span::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -218,56 +184,38 @@ span{
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    from {
         border-left: 3px solid #b74b4b;
     }
+    to {
+        border-left: 3px solid transparent;
+    }
 }
 
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
+@keyframes words {
+    0%, 20% {
+        content: "Sinh Viên NNTU";
     }
-    21%, 40%{
-        content: "Developer";
+    21%, 40% {
+        content: "Lập trình viên";
     }
-    41%, 60%{
-        content: "Web Designer";
+    41%, 60% {
+        content: "Tiktoker";
     }
-    61%, 80%{
+    61%, 80% {
         content: "Youtuber";
     }
-    81%, 100%{
-        content: "Script Writer";
+    81%, 100% {
+        content: "Gamer";
     }
 }
 
-@media (max-width: 1000px){
-    .home{
+@media (max-width: 1000px) {
+    .home {
         gap: 4rem;
     }
 }
-
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-/* Phần CSS riêng cho trang Kỹ năng */
 
 section.skills {
     padding: 5rem 9% 5rem;
@@ -324,26 +272,6 @@ section.skills {
     font-size: 1.4rem;
 }
 
-@media(max-width: 768px) {
-    section.skills {
-        padding: 5rem 5%;
-    }
-
-    .skills h1 {
-        font-size: 3rem;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill {
-        width: 90%;
-    }
-}
-/* Phần CSS riêng cho trang Giáo dục */
-
 section.education {
     padding: 5rem 9% 5rem;
     min-height: 100vh;
@@ -399,37 +327,17 @@ section.education {
     font-size: 1.4rem;
 }
 
-@media(max-width: 768px) {
-    section.education {
-        padding: 5rem 5%;
-    }
-
-    .education h1 {
-        font-size: 3rem;
-    }
-
-    .education-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .education-item {
-        width: 90%;
-    }
-}
-/* Phong cách đẳng cấp và sang trọng với màu sắc đồng bộ */
-
 section.experience {
     padding: 5rem 9% 5rem;
     min-height: 100vh;
-    background-color: #161616; /* Nền tối để phù hợp với các trang trước */
+    background-color: #161616;
 }
 
 .experience h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #b74b4b; /* Màu đỏ đậm để phù hợp với màu sắc trước đó */
+    color: #b74b4b;
     margin-top: 35px;
 }
 
@@ -440,66 +348,55 @@ section.experience {
 }
 
 .experience-item {
-    background-color: #222; /* Nền xám đậm để phù hợp với nền trang */
-    border: 1px solid #333; /* Đường viền nhẹ để phù hợp với màu nền */
+    background-color: #222;
+    border: 1px solid #333;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Bóng đổ đậm hơn để tạo chiều sâu */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
 }
 
 .experience-item:hover {
-    border-color: #b74b4b; /* Đổi màu viền khi hover để phù hợp với màu tiêu đề */
-    box-shadow: 0 0 25px rgba(0,0,0,0.4); /* Tăng cường bóng đổ khi hover */
+    border-color: #b74b4b;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 .experience-item h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #e0e0e0; /* Màu sáng cho tiêu đề để nổi bật trên nền tối */
+    color: #e0e0e0;
 }
 
 .experience-item .role {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #999; /* Màu xám sáng cho vai trò */
+    color: #999;
 }
 
 .experience-item .date {
     font-size: 1.4rem;
     font-weight: 400;
-    color: #ccc; /* Màu xám nhạt cho ngày tháng */
+    color: #ccc;
     margin-bottom: 1rem;
 }
 
 .experience-item p {
     font-size: 1.6rem;
-    color: #e0e0e0; /* Màu sáng cho nội dung */
+    color: #e0e0e0;
 }
-
-@media(max-width: 768px) {
-    section.experience {
-        padding: 5rem 5%;
-    }
-
-    .experience h1 {
-        font-size: 3rem;
-    }
-}
-/* Phong cách sang trọng và hiện đại */
 
 section.interests {
     padding: 5rem 9%;
-    background-color: #161616; /* Nền tối để phù hợp với các trang trước */
+    background-color: #161616;
 }
 
 .interests h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #b74b4b; /* Màu đỏ đậm để phù hợp với màu sắc trước đó */
-    text-align: center; /* Căn giữa tiêu đề */
+    color: #b74b4b;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -507,65 +404,54 @@ section.interests {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center; /* Căn giữa các mục trong container */
+    justify-content: center;
 }
 
 .interest-item {
-    background-color: #222; /* Nền xám đậm để phù hợp với nền trang */
-    border: 1px solid #333; /* Đường viền nhẹ để phù hợp với màu nền */
+    background-color: #222;
+    border: 1px solid #333;
     border-radius: 1rem;
     padding: 2rem;
-    width: calc(50% - 1rem); /* Điều chỉnh kích thước để phù hợp với layout */
-    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Bóng đổ nhẹ */
+    width: calc(50% - 1rem);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
-    text-align: center; /* Căn giữa nội dung trong từng mục */
+    text-align: center;
 }
 
 .interest-item:hover {
-    border-color: #b74b4b; /* Đổi màu viền khi hover */
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); /* Tăng cường bóng đổ khi hover */
+    border-color: #b74b4b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .interest-item h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #e0e0e0; /* Màu sáng cho tiêu đề */
+    color: #e0e0e0;
 }
 
 .interest-item p {
     font-size: 1.6rem;
-    color: #e0e0e0; /* Màu sáng cho nội dung */
+    color: #e0e0e0;
 }
 
 .interest-item i {
     font-size: 3rem;
-    color: #b74b4b; /* Màu đỏ đậm cho icon */
+    color: #b74b4b;
     margin-bottom: 1rem;
 }
 
-@media(max-width: 768px) {
-    section.interests {
-        padding: 5rem 5%; /* Điều chỉnh padding cho màn hình nhỏ */
-    }
-
-    .interest-item {
-        width: 100%; /* Đặt chiều rộng cho các mục ở chế độ di động */
-    }
-}
-/* Phần CSS cho trang liên hệ */
-
 section.contact {
     padding: 5rem 9%;
-    background-color: #161616; /* Nền tối để phù hợp với các trang trước */
-    color: #e0e0e0; /* Màu sáng cho văn bản */
+    background-color: #161616;
+    color: #e0e0e0;
 }
 
 .contact h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #b74b4b; /* Màu đỏ đậm để phù hợp với màu sắc trước đó */
+    color: #b74b4b;
     margin-top: 35px;
 }
 
@@ -667,13 +553,93 @@ section.contact {
 }
 
 .contact-form button:hover {
-    transform: scale3d(1.03);
+    transform: scale(1.03);
     background-color: #b74b4b;
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
 
-@media(max-width: 768px) {
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.menu-toggle i {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        gap: 4rem;
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    section.skills, section.education, section.interests, section.contact {
+        padding: 5rem 5%;
+    }
+
+    .skills h1, .education h1, .interests h1, .contact h1 {
+        font-size: 3rem;
+    }
+
+    .skills-container, .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill, .education-item {
+        width: 90%;
+    }
+
     .contact-info {
         flex-direction: column;
         align-items: center;
@@ -686,4 +652,27 @@ section.contact {
     .contact-form {
         padding: 2rem;
     }
+
+    .interest-item {
+        width: 100%;
+    }
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    padding: 10px;
+}
+
+.nav-links.active {
+    display: flex;
 }
