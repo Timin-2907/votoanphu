@@ -129,6 +129,19 @@ span{
     border: 2px solid #b74b4b;
     transition: 0.3s ease;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100%;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .btn:hover{
     transform: scale3d(1.03);
