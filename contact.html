@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Liên hệ</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Phú Võ</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Kỹ năng</a>
+            <a href="education.html">Giáo dục</a>
+            <a href="experience.html">Kinh nghiệm</a>
+            <a href="interests.html">Sở thích</a>
+            <a href="contact.html" class="active">Liên hệ</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <h1>Liên Hệ</h1>
+        <p>Đây là cách bạn có thể liên hệ với tôi:</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Email</h2>
+                <p><a href="mailto:votoanphu3769@gmailcom">votoanphu3769@gmailcom</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <h2>Điện thoại</h2>
+                <p><a href="tel:0783815772">+84 783815772</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>Địa chỉ</h2>
+                <p>Kiểng Phước, huyện Gò Công Đông, Tiền Giang, Việt Nam</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Gửi tin nhắn</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn">Gửi</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
+       
