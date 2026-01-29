@@ -9,365 +9,145 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">Phú Võ</a>
-        <div class="menu-toggle" id="menuToggle">
-            <i class="fa-solid fa-bars"></i>
+        <div class="container">
+            <a href="index.html" class="logo">Phú <span>Võ</span></a>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="skills.html">Kỹ năng</a></li>
+                    <li><a href="education.html">Học vấn</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="projects.html" class="active">Dự án</a></li>
+                    <li><a href="interests.html">Sở thích</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="navMenu">
-            <a href="index.html">Trang chủ</a>
-            <a href="skills.html">Kỹ năng</a>
-            <a href="education.html">Học vấn</a>
-            <a href="experience.html">Kinh nghiệm</a>
-            <a href="projects.html" class="active">Dự án</a>
-            <a href="interests.html">Sở thích</a>
-            <a href="contact.html">Liên hệ</a>
-        </nav>
     </header>
 
-    <section class="projects">
-        <div class="section-header">
-            <h1>Dự Án Của Tôi</h1>
-            <p>Các dự án cá nhân và nhóm mà tôi đã thực hiện trong quá trình học tập và phát triển</p>
-        </div>
+    <section class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h1>Dự Án Của Tôi</h1>
+                <p>Các dự án cá nhân và nhóm mà tôi đã thực hiện</p>
+            </div>
 
-        <!-- Filter Buttons -->
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">
-                <i class="fa-solid fa-th"></i> Tất cả
-            </button>
-            <button class="filter-btn" data-filter="web">
-                <i class="fa-solid fa-globe"></i> Web
-            </button>
-            <button class="filter-btn" data-filter="mobile">
-                <i class="fa-solid fa-mobile"></i> Mobile
-            </button>
-            <button class="filter-btn" data-filter="fullstack">
-                <i class="fa-solid fa-layer-group"></i> Full-stack
-            </button>
-            <button class="filter-btn" data-filter="other">
-                <i class="fa-solid fa-code"></i> Khác
-            </button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card" data-category="fullstack">
-                <div class="project-image">
-                    <img src="project1.jpg" alt="E-commerce Website" onerror="this.src='https://via.placeholder.com/400x250?text=E-commerce+Website'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: Shadow -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-store"></i>
                     </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Website Thương mại Điện tử</h3>
-                        <span class="project-status completed">Hoàn thành</span>
-                    </div>
-                    <p class="project-description">
-                        Hệ thống bán hàng online đầy đủ tính năng bao gồm giỏ hàng, thanh toán, 
-                        quản lý sản phẩm và đơn hàng. Sử dụng MERN stack.
-                    </p>
-                    <div class="project-features">
-                        <h4>Tính năng chính:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Đăng nhập, đăng ký người dùng</li>
-                            <li><i class="fa-solid fa-check"></i> Giỏ hàng và thanh toán online</li>
-                            <li><i class="fa-solid fa-check"></i> Admin dashboard</li>
-                            <li><i class="fa-solid fa-check"></i> Tìm kiếm và lọc sản phẩm</li>
-                        </ul>
-                    </div>
+                    <h3>Shadow - Website Thương Mại Điện Tử</h3>
+                    <p>Website bán giày thể thao trực tuyến được xây dựng bằng .NET. Hệ thống bao gồm quản lý sản phẩm, giỏ hàng, thanh toán và admin dashboard để quản lý đơn hàng.</p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                        <span>Express</span>
-                        <span>JWT</span>
+                        <span>.NET</span>
+                        <span>E-commerce</span>
+                        <span>SQL Server</span>
+                        <span>Bootstrap</span>
                     </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 12/2024</span>
-                        <span><i class="fa-solid fa-users"></i> Nhóm 4 người</span>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/Timin-2907/Shadow" class="btn btn-outline" target="_blank">
+                            <i class="fa-brands fa-github"></i> Xem Code
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="project2.jpg" alt="Portfolio Website" onerror="this.src='https://via.placeholder.com/400x250?text=Portfolio+Website'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+                <!-- Project 2: Academic Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Portfolio Website</h3>
-                        <span class="project-status completed">Hoàn thành</span>
-                    </div>
-                    <p class="project-description">
-                        Website portfolio cá nhân responsive, hiện đại với hiệu ứng động mượt mà. 
-                        Giới thiệu về bản thân, kỹ năng, dự án và thông tin liên hệ.
-                    </p>
-                    <div class="project-features">
-                        <h4>Đặc điểm:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Responsive design</li>
-                            <li><i class="fa-solid fa-check"></i> Smooth animations</li>
-                            <li><i class="fa-solid fa-check"></i> Dark theme</li>
-                            <li><i class="fa-solid fa-check"></i> Contact form</li>
-                        </ul>
-                    </div>
+                    <h3>Dự Án Phát Triển Phần Mềm</h3>
+                    <p>Dự án học thuật tập trung vào phát triển và triển khai phần mềm. Thể hiện sự hiểu biết về các khái niệm lập trình và thực hành tốt nhất.</p>
                     <div class="project-tech">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>Font Awesome</span>
+                        <span>Phát triển PM</span>
+                        <span>Lập trình</span>
+                        <span>Học thuật</span>
                     </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 11/2024</span>
-                        <span><i class="fa-solid fa-user"></i> Cá nhân</span>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/PhongNguyenKobe/220000238_2100010" class="btn btn-outline" target="_blank">
+                            <i class="fa-brands fa-github"></i> Xem Code
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="project3.jpg" alt="Task Management" onerror="this.src='https://via.placeholder.com/400x250?text=Task+Manager'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+                <!-- Project 3: votoanphu -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
                     </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Ứng dụng Quản lý Công việc</h3>
-                        <span class="project-status completed">Hoàn thành</span>
-                    </div>
-                    <p class="project-description">
-                        Todo app với khả năng tạo, chỉnh sửa, xóa task. Có tính năng filter, 
-                        sort và lưu trữ dữ liệu local storage.
-                    </p>
-                    <div class="project-features">
-                        <h4>Chức năng:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> CRUD operations</li>
-                            <li><i class="fa-solid fa-check"></i> Filter by status</li>
-                            <li><i class="fa-solid fa-check"></i> Local storage</li>
-                            <li><i class="fa-solid fa-check"></i> Drag & drop</li>
-                        </ul>
-                    </div>
+                    <h3>Website Portfolio Cá Nhân</h3>
+                    <p>Dự án portfolio cá nhân giới thiệu kỹ năng và kinh nghiệm. Được xây dựng với công nghệ web hiện đại và nguyên tắc thiết kế responsive.</p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>React Hooks</span>
-                        <span>CSS3</span>
-                        <span>Local Storage</span>
+                        <span>Phát triển Web</span>
+                        <span>Responsive</span>
+                        <span>Portfolio</span>
                     </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 10/2024</span>
-                        <span><i class="fa-solid fa-user"></i> Cá nhân</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card" data-category="other">
-                <div class="project-image">
-                    <img src="project4.jpg" alt="Student Management" onerror="this.src='https://via.placeholder.com/400x250?text=Student+Management'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Hệ thống Quản lý Sinh viên</h3>
-                        <span class="project-status completed">Hoàn thành</span>
-                    </div>
-                    <p class="project-description">
-                        Ứng dụng desktop quản lý thông tin sinh viên, điểm số và môn học. 
-                        Sử dụng C++ và MySQL database.
-                    </p>
-                    <div class="project-features">
-                        <h4>Tính năng:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Quản lý thông tin SV</li>
-                            <li><i class="fa-solid fa-check"></i> Quản lý điểm số</li>
-                            <li><i class="fa-solid fa-check"></i> Thống kê báo cáo</li>
-                            <li><i class="fa-solid fa-check"></i> Export to Excel</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <span>C++</span>
-                        <span>MySQL</span>
-                        <span>Qt Framework</span>
-                        <span>OOP</span>
-                    </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 5/2024</span>
-                        <span><i class="fa-solid fa-users"></i> Nhóm 3 người</span>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/Timin-2907/votoanphu" class="btn btn-outline" target="_blank">
+                            <i class="fa-brands fa-github"></i> Xem Code
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 5 -->
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="project5.jpg" alt="Weather App" onerror="this.src='https://via.placeholder.com/400x250?text=Weather+App'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+            <!-- GitHub Stats -->
+            <div class="fun-facts" style="margin-top: 8rem;">
+                <h2><i class="fa-brands fa-github"></i> Hoạt Động GitHub</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h3 style="font-size: 3rem; color: var(--primary-color); margin: 1rem 0;">3+</h3>
+                        <p>Kho Lưu Trữ</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 style="font-size: 3rem; color: var(--primary-color); margin: 1rem 0;">5+</h3>
+                        <p>Ngôi Sao</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fa-solid fa-code-commit"></i>
+                        <h3 style="font-size: 3rem; color: var(--primary-color); margin: 1rem 0;">100+</h3>
+                        <p>Commit</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3 style="font-size: 3rem; color: var(--primary-color); margin: 1rem 0;">2+</h3>
+                        <p>Cộng Tác</p>
                     </div>
                 </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Ứng dụng Thời tiết</h3>
-                        <span class="project-status completed">Hoàn thành</span>
-                    </div>
-                    <p class="project-description">
-                        Web app hiển thị thông tin thời tiết sử dụng OpenWeather API. 
-                        Tìm kiếm theo thành phố và hiển thị dự báo 5 ngày.
-                    </p>
-                    <div class="project-features">
-                        <h4>Tính năng:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Real-time weather data</li>
-                            <li><i class="fa-solid fa-check"></i> 5-day forecast</li>
-                            <li><i class="fa-solid fa-check"></i> City search</li>
-                            <li><i class="fa-solid fa-check"></i> Responsive UI</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>API Integration</span>
-                        <span>HTML/CSS</span>
-                        <span>Async/Await</span>
-                    </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 9/2024</span>
-                        <span><i class="fa-solid fa-user"></i> Cá nhân</span>
-                    </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="https://github.com/Timin-2907" class="btn btn-primary" target="_blank">
+                        <i class="fa-brands fa-github"></i> Xem GitHub của tôi
+                    </a>
                 </div>
             </div>
 
-            <!-- Project 6 -->
-            <div class="project-card" data-category="mobile">
-                <div class="project-image">
-                    <img src="project6.jpg" alt="Note App" onerror="this.src='https://via.placeholder.com/400x250?text=Note+Taking+App'">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link" title="Xem demo">
-                                <i class="fa-solid fa-eye"></i>
-                            </a>
-                            <a href="#" class="project-link" title="Source code">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="project-header">
-                        <h3>Ứng dụng Ghi chú</h3>
-                        <span class="project-status progress">Đang phát triển</span>
-                    </div>
-                    <p class="project-description">
-                        Mobile app ghi chú đơn giản với React Native. Hỗ trợ tạo, chỉnh sửa, 
-                        xóa ghi chú và phân loại theo category.
-                    </p>
-                    <div class="project-features">
-                        <h4>Tính năng:</h4>
-                        <ul>
-                            <li><i class="fa-solid fa-check"></i> Create/Edit notes</li>
-                            <li><i class="fa-solid fa-check"></i> Categories</li>
-                            <li><i class="fa-solid fa-spinner"></i> Cloud sync</li>
-                            <li><i class="fa-solid fa-spinner"></i> Rich text editor</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <span>React Native</span>
-                        <span>AsyncStorage</span>
-                        <span>Firebase</span>
-                        <span>Expo</span>
-                    </div>
-                    <div class="project-meta">
-                        <span><i class="fa-solid fa-calendar"></i> Tháng 1/2025</span>
-                        <span><i class="fa-solid fa-user"></i> Cá nhân</span>
-                    </div>
-                </div>
+            <!-- Navigation Buttons -->
+            <div class="navigation-buttons">
+                <a href="experience.html" class="btn btn-outline">
+                    <i class="fa-solid fa-arrow-left"></i> Kinh nghiệm
+                </a>
+                <a href="interests.html" class="btn btn-outline">
+                    Sở thích <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </div>
-
-        <!-- GitHub Stats -->
-        <div class="github-section">
-            <h2><i class="fa-brands fa-github"></i> GitHub Activity</h2>
-            <div class="github-stats">
-                <div class="stat-item">
-                    <i class="fa-solid fa-code-branch"></i>
-                    <h3>25+</h3>
-                    <p>Repositories</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fa-solid fa-star"></i>
-                    <h3>50+</h3>
-                    <p>Stars</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fa-solid fa-code-commit"></i>
-                    <h3>500+</h3>
-                    <p>Commits</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fa-solid fa-users"></i>
-                    <h3>10+</h3>
-                    <p>Collaborations</p>
-                </div>
-            </div>
-            <a href="https://github.com/dashboard" class="btn btn-github" target="_blank">
-                <i class="fa-brands fa-github"></i> Xem GitHub của tôi
-            </a>
-        </div>
-
-        <div class="navigation-links">
-            <a href="experience.html" class="btn">
-                <i class="fa-solid fa-arrow-left"></i> Kinh nghiệm
-            </a>
-            <a href="interests.html" class="btn">
-                Sở thích <i class="fa-solid fa-arrow-right"></i>
-            </a>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Made with <i class="fa-solid fa-heart"></i> by Võ Toàn Phú</p>
+                <p class="copyright">&copy; 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

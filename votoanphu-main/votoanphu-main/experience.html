@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinh nghiệm | Võ Toàn Phú</title>
+    <title>Kỹ năng | Võ Toàn Phú</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,9 +15,10 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="skills.html">Kỹ năng</a></li>
+                    <li><a href="skills.html" class="active">Kỹ năng</a></li>
                     <li><a href="education.html">Giáo dục</a></li>
-                    <li><a href="experience.html" class="active">Kinh nghiệm</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="projects.html">Dự án</a></li>
                     <li><a href="interests.html">Sở thích</a></li>
                     <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
@@ -28,125 +29,108 @@
         </div>
     </header>
 
-    <section class="experience">
+    <section class="skills">
         <div class="container">
             <div class="section-header">
-                <h1>Kinh Nghiệm</h1>
-                <p>Những trải nghiệm và dự án tôi đã tham gia</p>
+                <h1>KỸ NĂNG</h1>
+                <p>Các công nghệ và kỹ năng tôi đang sử dụng</p>
             </div>
 
-            <div class="experience-list">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div class="experience-icon future">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="experience-info">
-                            <h2>Kỹ sư Phần mềm</h2>
-                            <p class="role"><i class="fas fa-briefcase"></i> Nhà phát triển phần mềm</p>
-                            <p class="date"><i class="fas fa-calendar"></i> Tháng 6, 2025 - </p>
-                        </div>
+            <!-- Technical Skills Grid -->
+            <div class="tech-skills-grid">
+                <!-- C# & OOP -->
+                <div class="tech-skill-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="experience-content">
-                        <p>Đang bổ sung - Cơ hội nghề nghiệp trong tương lai</p>
-                        <div class="experience-tags">
-                            <span class="tag">Full-stack</span>
-                            <span class="tag">Software Development</span>
-                        </div>
-                    </div>
+                    <h3>C# & OOP</h3>
+                    <p><strong>Lập trình hướng đối tượng</strong></p>
+                    <p>Sử dụng thành thạo C# với các kỹ thuật OOP và LINQ</p>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div class="experience-icon current">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="experience-info">
-                            <h2>Thực tập sinh</h2>
-                            <p class="role"><i class="fas fa-briefcase"></i> Thực tập sinh</p>
-                            <p class="date"><i class="fas fa-calendar"></i> Tháng 1, 2025 - Tháng 5, 2025</p>
-                        </div>
+                <!-- ASP.NET MVC -->
+                <div class="tech-skill-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-microsoft"></i>
                     </div>
-                    <div class="experience-content">
-                        <p>Đang bổ sung - Đang trong quá trình thực tập và học hỏi</p>
-                        <div class="experience-skills">
-                            <span class="skill-item"><i class="fas fa-check"></i> Lập trình</span>
-                            <span class="skill-item"><i class="fas fa-check"></i> Team work</span>
-                            <span class="skill-item"><i class="fas fa-check"></i> Problem solving</span>
-                        </div>
-                    </div>
+                    <h3>ASP.NET MVC</h3>
+                    <p><strong>Phát triển ứng dụng Web</strong></p>
+                    <p>Xây dựng các chức năng CRUD, Authentication</p>
                 </div>
 
-                <div class="experience-card upcoming">
-                    <div class="experience-header">
-                        <div class="experience-icon">
-                            <i class="fas fa-plus-circle"></i>
-                        </div>
-                        <div class="experience-info">
-                            <h2>Dự án và Kinh nghiệm khác</h2>
-                            <p class="role"><i class="fas fa-briefcase"></i> Đang bổ sung</p>
-                            <p class="date"><i class="fas fa-calendar"></i> Đang cập nhật</p>
-                        </div>
+                <!-- SQL Server -->
+                <div class="tech-skill-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <div class="experience-content">
-                        <p>Đang trong quá trình tích lũy thêm kinh nghiệm và tham gia các dự án mới.</p>
-                        <div class="coming-soon">
-                            <i class="fas fa-hourglass-half"></i>
-                            <span>Coming Soon...</span>
-                        </div>
+                    <h3>SQL Server</h3>
+                    <p><strong>Quản lý cơ sở dữ liệu</strong></p>
+                    <p>Viết SQL Server Query, Stored Procedures</p>
+                </div>
+
+                <!-- Git/GitHub -->
+                <div class="tech-skill-card">
+                    <div class="tech-icon">
+                        <i class="fab fa-github"></i>
                     </div>
+                    <h3>Git/GitHub</h3>
+                    <p><strong>Quản lý source code</strong></p>
+                    <p>Push, Pull, Branch và làm việc nhóm</p>
                 </div>
             </div>
 
-            <!-- Projects Section -->
-            <div class="projects-preview">
-                <h2>Một số dự án tiêu biểu</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h3>Portfolio Website</h3>
-                        <p>Website giới thiệu cá nhân với thiết kế hiện đại</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
+            <div class="section-divider"></div>
 
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Coding Projects</h3>
-                        <p>Các dự án lập trình học tập tại trường</p>
-                        <div class="project-tech">
-                            <span>C/C++</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
+            <div class="section-header" style="margin-top: 6rem;">
+                <h1>KỸ NĂNG MỀM</h1>
+                <p>Những phẩm chất cá nhân được rèn luyện</p>
+            </div>
 
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3>More Projects</h3>
-                        <p>Đang phát triển thêm nhiều dự án mới</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
+            <!-- Soft Skills Grid -->
+            <div class="soft-skills-grid">
+                <!-- Giao tiếp -->
+                <div class="soft-skill-card">
+                    <div class="soft-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
+                    <h3>Kỹ năng Giao tiếp</h3>
+                    <p>Rèn luyện qua kinh nghiệm làm việc, giao tiếp tốt với khách hàng và đồng nghiệp</p>
+                </div>
+
+                <!-- Làm việc nhóm -->
+                <div class="soft-skill-card">
+                    <div class="soft-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Làm việc Nhóm</h3>
+                    <p>Có khả năng làm việc nhóm hiệu quả, phối hợp tốt với các thành viên</p>
+                </div>
+
+                <!-- Xử lý tình huống -->
+                <div class="soft-skill-card">
+                    <div class="soft-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Xử lý Tình huống</h3>
+                    <p>Khả năng xử lý tình huống linh hoạt trong môi trường làm việc</p>
+                </div>
+
+                <!-- Thích nghi -->
+                <div class="soft-skill-card">
+                    <div class="soft-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Thích nghi & Chịu áp lực</h3>
+                    <p>Thích nghi tốt với môi trường làm việc nhanh và áp lực cao</p>
                 </div>
             </div>
 
             <div class="navigation-buttons">
-                <a href="skills.html" class="btn btn-outline">
-                    <i class="fas fa-code"></i> Kỹ năng
+                <a href="education.html" class="btn btn-outline">
+                    <i class="fas fa-graduation-cap"></i> Giáo dục
                 </a>
-                <a href="interests.html" class="btn btn-outline">
-                    <i class="fas fa-heart"></i> Sở thích
+                <a href="experience.html" class="btn btn-outline">
+                    <i class="fas fa-briefcase"></i> Kinh nghiệm
                 </a>
                 <a href="contact.html" class="btn btn-primary">
                     <i class="fas fa-paper-plane"></i> Liên hệ
