@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | Võ Toàn Phú</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PHÚ<span> VÕ</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="skills.html">Kỹ năng</a></li>
+                    <li><a href="education.html">Giáo dục</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="interests.html">Sở thích</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h1>Liên Hệ</h1>
+                <p>Hãy kết nối với tôi qua các kênh sau hoặc gửi tin nhắn trực tiếp</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:votoanphu3769@gmail.com">votoanphu3769@gmail.com</a></p>
+                        <span class="response-time"><i class="fas fa-clock"></i> Phản hồi trong 24h</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3>Điện thoại</h3>
+                        <p><a href="tel:0783815772">+84 783 815 772</a></p>
+                        <span class="response-time"><i class="fas fa-phone-volume"></i> Sẵn sàng hỗ trợ</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Địa chỉ</h3>
+                        <p>Kiểng Phước, huyện Gò Công Đông</p>
+                        <p>Tiền Giang, Việt Nam</p>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-contact">
+                        <h3>Kết nối với tôi</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/phu.toan.5851?mibextid=ZbWKwL" target="_blank" class="social-btn facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/phu.toan.5851?igsh=MTVoMDF2ZnprYTllcA==" target="_blank" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://youtube.com/@24.votoanphu31?si=dSrHqcWOQeZwRI81" target="_blank" class="social-btn youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://github.com/dashboard" target="_blank" class="social-btn github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Gửi tin nhắn cho tôi</h2>
+                        <p>Điền thông tin vào form bên dưới, tôi sẽ phản hồi sớm nhất có thể</p>
+                    </div>
+
+                    <form class="contact-form" action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Họ và tên
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Chủ đề
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="Chủ đề tin nhắn">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Tin nhắn
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Nội dung tin nhắn của bạn..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Quick Links Back -->
+            <div class="navigation-buttons">
+                <a href="index.html" class="btn btn-outline">
+                    <i class="fas fa-home"></i> Trang chủ
+                </a>
+                <a href="skills.html" class="btn btn-outline">
+                    <i class="fas fa-code"></i> Kỹ năng
+                </a>
+                <a href="experience.html" class="btn btn-outline">
+                    <i class="fas fa-briefcase"></i> Kinh nghiệm
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Thiết kế với <i class="fas fa-heart"></i> bởi Võ Toàn Phú</p>
+                <p class="copyright">&copy; 2026 Võ Toàn Phú. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

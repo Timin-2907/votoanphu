@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở thích | Võ Toàn Phú</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PHÚ<span> VÕ</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="skills.html">Kỹ năng</a></li>
+                    <li><a href="education.html">Giáo dục</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="interests.html" class="active">Sở thích</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="interests">
+        <div class="container">
+            <div class="section-header">
+                <h1>Sở Thích</h1>
+                <p>Những điều tôi yêu thích và đam mê trong cuộc sống</p>
+            </div>
+
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <i class="fa-solid fa-camera"></i>
+                        <div class="interest-overlay">
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                    <div class="interest-content">
+                        <h2>Chụp ảnh</h2>
+                        <p>Tôi đam mê chụp ảnh và thích ghi lại những khoảnh khắc đẹp trong cuộc sống. Tôi thường sử dụng máy ảnh của mình để chụp cảnh vật, chân dung và các sự kiện đặc biệt.</p>
+                        <div class="interest-stats">
+                            <div class="stat">
+                                <i class="fas fa-images"></i>
+                                <span>500+ ảnh</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>Hobby</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <div class="interest-overlay">
+                            <span>Gaming</span>
+                        </div>
+                    </div>
+                    <div class="interest-content">
+                        <h2>Chơi game</h2>
+                        <p>Chơi game là một phần quan trọng trong cuộc sống giải trí của tôi. Tôi thích khám phá các trò chơi video mới và tham gia vào các trò chơi đa người chơi với bạn bè.</p>
+                        <div class="interest-stats">
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>Top Player</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>Multiplayer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="interest-overlay">
+                            <span>Reading</span>
+                        </div>
+                    </div>
+                    <div class="interest-content">
+                        <h2>Đọc sách</h2>
+                        <p>Tôi yêu đọc sách để mở rộng kiến thức và khám phá thế giới qua những trang sách. Các thể loại yêu thích của tôi bao gồm tiểu thuyết, sách khoa học và lịch sử.</p>
+                        <div class="interest-stats">
+                            <div class="stat">
+                                <i class="fas fa-book-open"></i>
+                                <span>20+ cuốn/năm</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-bookmark"></i>
+                                <span>Đa thể loại</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-image">
+                        <i class="fa-solid fa-basketball"></i>
+                        <div class="interest-overlay">
+                            <span>Sports</span>
+                        </div>
+                    </div>
+                    <div class="interest-content">
+                        <h2>Chơi bóng rổ</h2>
+                        <p>Chơi bóng rổ là một cách tuyệt vời để giữ dáng và cũng là cơ hội để giao lưu, thư giãn.</p>
+                        <div class="interest-stats">
+                            <div class="stat">
+                                <i class="fas fa-running"></i>
+                                <span>Active</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-heart"></i>
+                                <span>Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fun Facts Section -->
+            <div class="fun-facts">
+                <h2>Những điều thú vị về tôi</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <i class="fas fa-music"></i>
+                        <p>Thích nghe nhạc khi code</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-coffee"></i>
+                        <p>Nghiện cà phê mỗi sáng</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-moon"></i>
+                        <p>Làm việc hiệu quả vào ban đêm</p>
+                    </div>
+                    <div class="fact-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Luôn tò mò với công nghệ mới</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="skills.html" class="btn btn-outline">
+                    <i class="fas fa-code"></i> Kỹ năng
+                </a>
+                <a href="experience.html" class="btn btn-outline">
+                    <i class="fas fa-briefcase"></i> Kinh nghiệm
+                </a>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Liên hệ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Thiết kế với <i class="fas fa-heart"></i> bởi Võ Toàn Phú</p>
+                <p class="copyright">&copy; 2026 Võ Toàn Phú. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

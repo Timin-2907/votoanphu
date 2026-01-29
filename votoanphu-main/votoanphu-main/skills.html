@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỹ năng | Võ Toàn Phú</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PHÚ<span> VÕ</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="skills.html" class="active">Kỹ năng</a></li>
+                    <li><a href="education.html">Giáo dục</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="interests.html">Sở thích</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h1>Kỹ Năng</h1>
+                <p>Dưới đây là các kỹ năng mà tôi đã phát triển trong quá trình học tập và làm việc</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h2>Lập trình</h2>
+                    <p>Thành thạo các ngôn ngữ lập trình như C/C++, Python và JavaScript.</p>
+                    <div class="skill-tags">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h2>Phân Tích & Giải Quyết Vấn Đề</h2>
+                    <p>Nghiên cứu và phân tích: Khả năng thu thập, phân tích dữ liệu và thông tin để đưa ra các kết luận và giải pháp hợp lý.</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h2>Kỹ Năng Giao Tiếp</h2>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Giao tiếp viết: Viết báo cáo, luận văn rõ ràng và chính xác</li>
+                        <li><i class="fas fa-check"></i> Giao tiếp nói: Trình bày và thuyết trình hiệu quả</li>
+                        <li><i class="fas fa-check"></i> Lắng nghe: Hiểu ý kiến người khác trong nhóm</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h2>Kỹ Năng Làm Việc Nhóm</h2>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check"></i> Hợp tác: Làm việc hiệu quả với các thành viên</li>
+                        <li><i class="fas fa-check"></i> Lãnh đạo: Quản lý và dẫn dắt nhóm trong dự án</li>
+                    </ul>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="education.html" class="btn btn-outline">
+                    <i class="fas fa-graduation-cap"></i> Giáo dục
+                </a>
+                <a href="experience.html" class="btn btn-outline">
+                    <i class="fas fa-briefcase"></i> Kinh nghiệm
+                </a>
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Liên hệ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Thiết kế với <i class="fas fa-heart"></i> bởi Võ Toàn Phú</p>
+                <p class="copyright">&copy; 2026 Võ Toàn Phú. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

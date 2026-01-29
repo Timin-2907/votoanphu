@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ | Võ Toàn Phú - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">PHÚ<span> VÕ</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="skills.html">Kỹ năng</a></li>
+                    <li><a href="education.html">Giáo dục</a></li>
+                    <li><a href="experience.html">Kinh nghiệm</a></li>
+                    <li><a href="interests.html">Sở thích</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="container home-container">
+            <div class="home-content">
+                <span class="greeting">
+                    <span class="greeting-text">
+                        Xin chào <i class="fas fa-hand-sparkles"></i>, Tôi là
+                    </span>
+                </span>
+                
+                <h1>Võ Toàn <span class="highlight">Phú</span></h1>
+                
+                <h3 class="typing-text">Tôi là <span class="typed-output"></span></h3>
+                
+                <p class="description">
+                    Chào các bạn, tôi là Võ Toàn Phú, sinh ngày 22 tháng 11 năm 2004. 
+                    Hiện tại, tôi đang theo học năm thứ hai ngành lập trình tại Đại học Nguyễn Tất Thành. 
+                    <br><br>
+                    Tôi rất đam mê công nghệ và lập trình, và luôn tìm kiếm cơ hội để học hỏi và phát triển 
+                    kỹ năng của mình trong lĩnh vực này. Với thái độ nhiệt huyết và sẵn sàng học hỏi, 
+                    tôi tin rằng mỗi ngày là một cơ hội mới để trở thành phiên bản tốt hơn của chính mình.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Liên hệ với tôi
+                    </a>
+                    
+                    <a href="education.html" class="btn btn-outline">
+                        <i class="fas fa-graduation-cap"></i> Giáo dục
+                    </a>
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-outline dropdown-toggle" onclick="toggleDropdown(event)">
+                            <i class="fas fa-download"></i> Tải CV <i class="fas fa-caret-down"></i>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="cvDropdown">
+                            <a href="assets/cv/VoToanPhu-CV-VI.pdf" download class="dropdown-item">
+                                <i class="fas fa-flag"></i> Tiếng Việt
+                            </a>
+                            <a href="assets/cv/VoToanPhu-CV-EN.pdf" download class="dropdown-item">
+                                <i class="fas fa-globe"></i> English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/phu.toan.5851?mibextid=ZbWKwL" target="_blank" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/phu.toan.5851?igsh=MTVoMDF2ZnprYTllcA==" target="_blank" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/@24.votoanphu31?si=dSrHqcWOQeZwRI81" target="_blank" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/dashboard" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="quick-links">
+                    <a href="skills.html" class="quick-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Kỹ năng</span>
+                    </a>
+                    <a href="education.html" class="quick-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Giáo dục</span>
+                    </a>
+                    <a href="experience.html" class="quick-card">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Kinh nghiệm</span>
+                    </a>
+                    <a href="interests.html" class="quick-card">
+                        <i class="fas fa-heart"></i>
+                        <span>Sở thích</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-wrapper">
+                    <img src="main.jpg" alt="Võ Toàn Phú" onerror="this.src='https://via.placeholder.com/400x400/b74b4b/ffffff?text=V%C3%B5+To%C3%A0n+Ph%C3%BA'">
+                    <div class="img-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <h3><span class="stat-number" data-target="5">0</span>+</h3>
+                    <p>Dự án đã làm</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Năm <span class="stat-number" data-target="4">0</span></h3>
+                    <p>Sinh viên</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <h3><span class="stat-number" data-target="500">0</span>+</h3>
+                    <p>Giờ code</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3><span class="stat-number" data-target="100">0</span>+</h3>
+                    <p>Cốc cà phê</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Thiết kế với <i class="fas fa-heart"></i> bởi Võ Toàn Phú</p>
+                <p class="copyright">&copy; 2026 Võ Toàn Phú. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
